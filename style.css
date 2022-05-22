@@ -2,3 +2,20 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+
+rect {
+stroke: black;
+  stroke-width: 15px;
+  fill: red;
+  transition: all 2000ms;
+}
+
+
+
+
+rect:hover {
+stroke: #2e2e2e;
+  stroke-width: 25px;
+  fill: #ff5252;
+}
