@@ -1,4 +1,4 @@
-// import * as d3 from "https://cdn.skypack.dev/d3@7";
+import * as d3 from "https://cdn.skypack.dev/d3@7";
 
 
 
@@ -35,7 +35,6 @@ const  boto = document.getElementById("hola");
 
 boto.addEventListener("click", ()=>{
 
-
         boto.innerText= "oh no";
     
 });
@@ -55,7 +54,7 @@ boto.addEventListener("click", ()=>{
 
 
 
-/* 
+/* */
     const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
 
     d3.select("body").selectAll("div")
@@ -65,4 +64,3 @@ boto.addEventListener("click", ()=>{
       .attr("class", "bar").style("height", d => `${d*5}px`)
       // Add your code below this line
 
-*/
