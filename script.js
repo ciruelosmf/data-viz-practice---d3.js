@@ -12,7 +12,7 @@ const svgns = "http://www.w3.org/2000/svg";
 
 let newRect = document.createElementNS(svgns, "rect");
 // make a simple rectangle
-let newRect = document.createElementNS(svgns, "rect");
+ 
 let a = 60;
 newRect.setAttribute("x", "150");
 newRect.setAttribute("y", "150");
@@ -34,7 +34,9 @@ const  boto = document.getElementById("hola");
 
 
 boto.addEventListener("click", ()=>{
-
+  newRect.setAttribute("y", a);
+  a += 60;
+  newRect.setAttribute("height", a-25);
         boto.innerText= "oh no";
     
 });
@@ -42,13 +44,7 @@ boto.addEventListener("click", ()=>{
 
 
 
-
-
-
- function showS() {
-   newRect.setAttribute("y", a);
-   a += 60;
- }
+ 
 
 
 
@@ -56,11 +52,14 @@ boto.addEventListener("click", ()=>{
 
 /* */
     const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+ 
 
-    d3.select("body").selectAll("div")
-      .data(dataset)
-      .enter()
-      .append("div")
-      .attr("class", "bar").style("height", d => `${d*5}px`)
+    d3.select("ul")
+     // .data(dataset)
+     // .enter()
+      .append("li")
+      // .attr("class", "bar")
+      .text("hola");
+      //.attr("class", "bar").style("height", d => `${d*5}px`);
       // Add your code below this line
 
